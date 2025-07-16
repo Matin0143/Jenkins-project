@@ -1,0 +1,11 @@
+# Flask (assuming app.py is entrypoint)
+cd ~/flask-app
+pm2 start app.py --interpreter python3 --name flask-app
+
+# Express (assuming index.js is entrypoint)
+cd ~/express-app
+pm2 start index.js --name express-app
+
+# Save and startup config
+pm2 save
+pm2 startup
